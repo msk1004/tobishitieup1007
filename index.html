@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEBリニューアル記念 記事タイアップご提案（改訂版）｜セポラージュ アンヴェール｜東菱薬品工業株式会社 御中</title>
+<style>
+  :root{
+    --page:#F6F4F8;--ink:#33323A;--muted:#77756E;--navy:#1F2A44;--navy-soft:#3B4A6B;
+    --lav:#B9AECB;--lav-deep:#7C6B92;--lav-pale:#F4F1F8;--line:#E4DEE9;
+    --gap:#7C6B92;--thin:#C9BEDA;--full:#D5D3D0;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:60px;}
+  body{margin:0;background:var(--page);color:var(--ink);font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.7;font-size:14px;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;}
+  .toc-nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  .toc-nav .in{max-width:1080px;margin:0 auto;padding:10px 20px;display:flex;gap:6px;align-items:center;overflow-x:auto;white-space:nowrap;}
+  .toc-nav .logo{font-size:11px;letter-spacing:.2em;color:var(--lav-deep);font-weight:700;margin-right:10px;}
+  .toc-nav a{font-size:11.5px;color:var(--navy);text-decoration:none;padding:4px 10px;border-radius:999px;}
+  .toc-nav a:hover{background:var(--lav-pale);}
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 60px;}
+  .sec{background:#fff;border-radius:18px;padding:44px 52px;margin:0 0 26px;box-shadow:0 10px 30px rgba(31,42,68,.07);}
+  h2.s-title{font-size:23px;color:var(--navy);margin:0 0 6px;display:flex;align-items:baseline;gap:12px;}
+  h2.s-title .no{font-size:11px;background:var(--navy);color:#fff;border-radius:999px;padding:3px 12px;}
+  .s-lead{color:var(--muted);font-size:13.5px;margin:0 0 20px;max-width:900px;}
+  .sec-label{font-size:12px;font-weight:700;color:var(--lav-deep);letter-spacing:.08em;margin:0 0 10px;}
+  .disclaimer{font-size:11px;color:var(--muted);background:var(--lav-pale);border-left:3px solid var(--lav-deep);padding:10px 14px;border-radius:6px;margin-top:16px;line-height:1.6;}
+  .credit{font-size:10px;color:var(--muted);margin-top:6px;}
+  .g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .card{background:var(--lav-pale);border:1px solid var(--line);border-radius:12px;padding:16px 18px;font-size:12.5px;}
+  .card h4{margin:0 0 8px;font-size:13.5px;color:var(--navy);}
+  .card ul{margin:0;padding-left:18px;}
+  .card.white{background:#fff;}
+  .tagopt{display:inline-block;background:#fff;color:var(--lav-deep);border:1px solid var(--lav-deep);border-radius:6px;font-size:10px;font-weight:700;padding:0 7px;margin-left:6px;vertical-align:2px;}
+
+  /* 表紙 */
+  .cover{padding:0;overflow:hidden;display:grid;grid-template-columns:1.15fr 1fr;background:linear-gradient(150deg,#fff 0%,var(--lav-pale) 70%,#EFE9F3 100%);}
+  .cover .txt{padding:56px 44px 48px 52px;display:flex;flex-direction:column;justify-content:center;}
+  .cover .mark{font-size:11px;letter-spacing:.3em;color:var(--muted);margin-bottom:14px;}
+  .cover .eyebrow{align-self:flex-start;font-size:11px;letter-spacing:.2em;color:var(--lav-deep);border:1px solid var(--lav);border-radius:999px;padding:4px 16px;margin-bottom:12px;}
+  .cover h1{font-size:28px;line-height:1.55;margin:4px 0 12px;color:var(--navy);}
+  .cover h1 span{color:var(--lav-deep);}
+  .cover .sub{font-size:13px;color:var(--muted);margin:0 0 22px;}
+  .cover .meta{display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;background:rgba(255,255,255,.85);border:1px solid var(--line);border-radius:14px;padding:14px 18px;}
+  .cover .meta .k{font-size:10.5px;color:var(--muted);}
+  .cover .meta .v{font-size:13px;font-weight:700;}
+  .cover .brand{margin-top:18px;font-size:11.5px;color:var(--muted);}
+  .cover .ph{position:relative;min-height:440px;}
+  .cover .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .cover .ph .cap{position:absolute;right:12px;bottom:10px;font-size:9.5px;color:#fff;background:rgba(31,42,68,.45);padding:2px 8px;border-radius:4px;}
+
+  /* 反映表 */
+  table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  table.fb th,table.fb td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;}
+  table.fb th{background:var(--navy);color:#fff;font-size:11.5px;}
+  table.fb td:first-child{background:var(--lav-pale);color:var(--navy-soft);width:42%;}
+
+  /* 導線図 */
+  .flow{display:grid;grid-template-columns:1fr 34px 1.25fr 34px .8fr;align-items:stretch;margin-top:20px;}
+  .flow .nd{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#fff;display:flex;flex-direction:column;}
+  .flow .nd .h{padding:10px 14px;color:#fff;font-size:11px;letter-spacing:.08em;}
+  .flow .nd .h b{display:block;font-size:14px;letter-spacing:0;margin-top:2px;}
+  .flow .nd .im{height:150px;background:#fff;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line);}
+  .flow .nd .im img{max-height:136px;width:auto;}
+  .flow .nd .im.wide img{max-height:none;width:100%;height:150px;object-fit:cover;}
+  .flow .nd .t{padding:10px 14px;font-size:11.5px;}
+  .flow .ar{display:flex;align-items:center;justify-content:center;color:var(--lav-deep);font-size:22px;font-weight:700;}
+  .flow .nd.opt{border:1.5px dashed var(--lav-deep);}
+  .flow .nd.opt .h{background:var(--lav-deep);}
+  .flow .nd.main{border:2px solid var(--navy);}
+  .flow .nd.main .h{background:var(--navy);}
+  .flow .nd.goal .h{background:var(--navy-soft);}
+  .flow .nd.goal .t{display:flex;flex-direction:column;justify-content:center;flex:1;}
+  .meta-under{margin-top:10px;background:var(--lav-pale);border-radius:10px;padding:9px 14px;font-size:11.5px;color:var(--navy-soft);text-align:center;}
+
+  /* 価格 */
+  table.price td,table.price th{border:1px solid var(--line);padding:10px 14px;}
+  table.price th{background:var(--navy);color:#fff;font-size:11.5px;text-align:left;}
+  table.price td.r{text-align:right;white-space:nowrap;}
+  table.price tr.sub td{background:var(--lav-pale);}
+  table.price tr.disc td{color:#B23B3B;}
+  table.price tr.total td{background:var(--navy);color:#fff;font-weight:700;font-size:14px;}
+  table.price tr.opt td{background:#fff;border-top:2px dashed var(--lav);}
+  .strike{text-decoration:line-through;color:var(--muted);font-size:11px;margin-right:6px;}
+  .price-box{display:grid;grid-template-rows:auto auto;gap:12px;}
+  .price-hero{background:linear-gradient(135deg,var(--navy),var(--navy-soft));color:#fff;border-radius:14px;padding:20px;text-align:center;}
+  .price-hero .k{font-size:11px;letter-spacing:.12em;opacity:.85;}
+  .price-hero .big{font-size:40px;font-weight:700;line-height:1.2;margin:6px 0 2px;}
+  .price-hero .big small{font-size:14px;font-weight:400;margin-left:4px;}
+  .price-opt{border:1.5px dashed var(--lav-deep);border-radius:14px;padding:16px 18px;text-align:center;background:#fff;}
+  .price-opt .k{font-size:11px;color:var(--lav-deep);font-weight:700;letter-spacing:.08em;}
+  .price-opt .big{font-size:26px;font-weight:700;color:var(--navy);margin:4px 0 0;}
+  .price-opt .big small{font-size:12px;font-weight:400;}
+  .price-opt p{margin:6px 0 0;font-size:11.5px;color:var(--muted);}
+
+  /* KW */
+  .rb{display:grid;grid-template-columns:250px 1fr 92px 52px;gap:10px;align-items:center;font-size:12px;padding:6px 0;border-bottom:1px solid #F0EDF3;}
+  .rb .track2{position:relative;height:15px;background:#F6F4F8;border-radius:8px;}
+  .rb .seg{position:absolute;top:0;left:0;height:15px;border-radius:8px;}
+  .seg.gap{background:var(--gap);} .seg.thin{background:var(--thin);} .seg.full{background:var(--full);}
+  .rb .val{font-size:11px;color:var(--muted);text-align:right;white-space:nowrap;}
+  .rb .st{font-size:10.5px;text-align:center;border-radius:6px;padding:1px 0;font-weight:700;}
+  .st.gap{background:#EEE8F5;color:var(--gap);} .st.thin{background:#F6F3FA;color:#8E80A3;} .st.full{background:#F1F0EE;color:#8A8884;}
+  .rb.head{font-size:10.5px;color:var(--muted);border-bottom:1px solid var(--line);}
+  .rb.new .kw::after{content:"ご提示";margin-left:6px;font-size:9px;background:var(--navy);color:#fff;border-radius:4px;padding:0 5px;vertical-align:1px;}
+  .legend{display:flex;gap:18px;font-size:11px;color:var(--muted);margin:10px 0 0;flex-wrap:wrap;}
+  .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:5px;}
+  .insight{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px;}
+  .insight .c{border-radius:12px;padding:14px 16px;font-size:12px;}
+  .insight .c b{display:block;font-size:13px;margin-bottom:4px;}
+  .insight .c.a{background:#F1F0EE;color:#5E5C58;}
+  .insight .c.b{background:var(--lav-pale);border:1.5px solid var(--lav-deep);}
+  .insight .c.b b{color:var(--lav-deep);}
+  .insight .c.c{background:var(--navy);color:#fff;}
+  .funnel{display:flex;gap:8px;align-items:stretch;margin-top:18px;}
+  .funnel .fb{flex:1;background:var(--lav-pale);border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center;}
+  .funnel .fb .l{font-size:11px;color:var(--muted);}
+  .funnel .fb .v{font-size:20px;font-weight:700;color:var(--navy);}
+  .funnel .fb .f{font-size:10px;color:var(--muted);}
+  .funnel .ar{display:flex;align-items:center;color:var(--lav-deep);font-weight:700;}
+
+  /* 記事 */
+  .art-head{background:var(--navy);color:#fff;border-radius:14px 14px 0 0;padding:16px 22px;display:flex;gap:16px;align-items:flex-start;}
+  .art-head.opt{background:var(--lav-deep);}
+  .art-head .id{font-size:13px;font-weight:700;line-height:1.3;border:1.5px solid rgba(255,255,255,.6);border-radius:10px;padding:8px 10px;white-space:nowrap;text-align:center;}
+  .art-head .tag{font-size:10px;letter-spacing:.12em;opacity:.85;}
+  .art-head h3{margin:3px 0 0;font-size:17px;line-height:1.55;}
+  .art-body{border:1px solid var(--line);border-top:none;border-radius:0 0 14px 14px;padding:18px 22px;}
+  .art-cols{display:grid;grid-template-columns:1.3fr 1fr;gap:22px;font-size:12px;}
+  .toc{margin:0;padding:0;list-style:none;counter-reset:h;}
+  .toc li{position:relative;padding:7px 0 7px 36px;border-bottom:1px dashed var(--line);}
+  .toc li:last-child{border-bottom:none;}
+  .toc li::before{counter-increment:h;content:"H2-" counter(h);position:absolute;left:0;top:9px;font-size:10px;font-weight:700;color:var(--lav-deep);}
+  .toc li b{color:var(--navy);display:block;font-size:12.5px;}
+  .toc li span{color:var(--muted);}
+  .toc li.key{background:var(--lav-pale);border-radius:8px;border-bottom:none;margin:2px 0;padding-right:8px;}
+  .meta-box{background:var(--lav-pale);border-radius:10px;padding:10px 14px;margin-bottom:10px;}
+  .meta-box .mk{font-size:10px;font-weight:700;color:var(--lav-deep);letter-spacing:.08em;margin-bottom:4px;}
+  .kwtag{display:inline-block;background:#fff;border:1px solid var(--lav);border-radius:999px;padding:1px 9px;margin:2px 3px 2px 0;font-size:10.5px;color:var(--navy);}
+  .pts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:4px;}
+  .pts div{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 6px;text-align:center;font-size:10.5px;}
+  .pts div b{display:block;color:var(--navy);font-size:12px;}
+  .pts div.main{border:2px solid var(--navy);}
+
+  /* 5品一覧 */
+  .roles{width:100%;border-collapse:separate;border-spacing:0;font-size:11.5px;margin-top:6px;}
+  .roles th,.roles td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top;}
+  .roles thead th{background:var(--navy);color:#fff;font-size:11px;}
+  .roles thead th:first-child{border-radius:10px 0 0 0;}
+  .roles thead th:last-child{border-radius:0 10px 0 0;}
+  .roles td.p{width:150px;}
+  .roles td.p img{height:78px;width:auto;margin-bottom:4px;}
+  .roles td.p b{display:block;color:var(--navy);font-size:12px;line-height:1.4;}
+  .roles td.p span{font-size:10.5px;color:var(--muted);}
+  .roles td.role{font-weight:700;color:var(--lav-deep);white-space:nowrap;}
+  .roles tr.entry td{background:#FAF8FC;}
+
+  /* Meta */
+  .ads{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .ad{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:10.5px;}
+  .ad .top{display:flex;align-items:center;gap:6px;padding:7px 10px;}
+  .ad .top .av{width:22px;height:22px;border-radius:50%;background:var(--navy);color:#fff;font-size:7.5px;display:flex;align-items:center;justify-content:center;font-weight:700;}
+  .ad .top .nm{font-weight:700;font-size:10.5px;line-height:1.2;}
+  .ad .top .nm span{display:block;font-weight:400;color:var(--muted);font-size:9px;}
+  .ad .cr{position:relative;aspect-ratio:1/1;overflow:hidden;background:#fff;}
+  .ad .cr img{width:100%;height:100%;object-fit:cover;}
+  .ad .cr img.contain{object-fit:contain;padding:12px 40px 56px;}
+  .ad .cr .ov{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;background:linear-gradient(transparent,rgba(31,42,68,.92) 35%);color:#fff;font-weight:700;font-size:13px;line-height:1.45;}
+  .ad .cr .ov.light{background:linear-gradient(transparent,rgba(124,107,146,.94) 35%);}
+  .ad .cr .badge2{position:absolute;top:10px;left:10px;background:var(--navy);color:#fff;font-size:10px;font-weight:700;padding:2px 9px;border-radius:999px;}
+  .ad .cta{display:flex;justify-content:space-between;align-items:center;padding:7px 10px;border-top:1px solid var(--line);font-size:10px;color:var(--muted);}
+  .ad .cta b{background:var(--lav-pale);color:var(--navy);padding:2px 8px;border-radius:4px;}
+  .ad .lbl{padding:6px 10px;font-size:11px;color:var(--lav-deep);font-weight:700;border-top:1px dashed var(--line);}
+  table.calc th,table.calc td{border:1px solid var(--line);padding:8px 11px;text-align:left;}
+  table.calc th{background:var(--navy);color:#fff;font-size:11.5px;}
+  table.calc td.num{color:var(--lav-deep);font-weight:700;white-space:nowrap;}
+  .cv-wrap{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .cv{border-radius:12px;padding:14px;text-align:center;}
+  .cv.lo{background:var(--lav-pale);border:1px solid var(--line);}
+  .cv.hi{background:var(--navy);color:#fff;}
+  .cv .k{font-size:11px;opacity:.85;}
+  .cv .n{font-size:32px;font-weight:700;line-height:1.15;margin:4px 0;}
+  .cv.lo .n{color:var(--navy);}
+  .cv .f{font-size:10px;opacity:.8;}
+  .kpi{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 10px;text-align:center;margin-bottom:12px;}
+  .kpi .n{font-size:30px;font-weight:700;color:var(--navy);line-height:1.1;}
+  .kpi .n small{font-size:12px;font-weight:400;color:var(--muted);}
+  .kpi .c{font-size:11px;color:var(--muted);margin-top:4px;}
+  .tl{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;}
+  .tl .s{background:#fff;border:1px solid var(--line);border-top:4px solid var(--lav-deep);border-radius:10px;padding:12px 14px;font-size:11.5px;}
+  .tl .s .w{font-size:10.5px;color:var(--lav-deep);font-weight:700;}
+  .tl .s b{display:block;color:var(--navy);font-size:13px;margin:2px 0 4px;}
+  .tl .s.hl{border-top-color:var(--navy);background:var(--lav-pale);}
+  .footnote{font-size:10.5px;color:var(--muted);text-align:center;margin-top:18px;line-height:1.7;}
+
+  @media (max-width:900px){
+    .sec{padding:28px 20px;}
+    .cover{grid-template-columns:1fr;}
+    .cover .txt{padding:34px 22px;}
+    .cover .ph{min-height:280px;}
+    .g2,.g3,.insight,.art-cols,.cv-wrap,.tl,.ads{grid-template-columns:1fr !important;}
+    .flow{grid-template-columns:1fr;}
+    .flow .ar{transform:rotate(90deg);height:30px;}
+    .rb{grid-template-columns:1fr 1fr;}
+    .rb .val,.rb .st{display:none;}
+    .funnel{flex-direction:column;}
+    .funnel .ar{justify-content:center;transform:rotate(90deg);}
+    .pts{grid-template-columns:1fr 1fr;}
+    table.fb,table.price,table.calc,.roles{display:block;overflow-x:auto;}
+    .price-hero .big{font-size:32px;}
+  }
+  @media print{.toc-nav{display:none;} body{background:#fff;} .sec{box-shadow:none;break-inside:avoid;}}
+</style>
+</head>
+<body>
+
+<nav class="toc-nav"><div class="in">
+  <span class="logo">CEPOLAGE Unveil</span>
+  <a href="#policy">ご意向の反映</a><a href="#plan">プラン</a><a href="#kw">キーワード再調査</a><a href="#main">メイン記事</a><a href="#sub">誘導記事</a><a href="#meta">Meta広告</a><a href="#next">進め方</a>
+</div></nav>
+
+<div class="wrap">
+
+  <!-- 表紙 -->
+  <section class="sec cover">
+    <div class="txt">
+      <div class="mark">ESTHETIC TSUSHIN WEB ／ RENEWAL CAMPAIGN</div>
+      <span class="eyebrow">記事タイアップご提案｜改訂版</span>
+      <h1>クレンジングへの関心を入口に、<br><span>セポラージュ アンヴェール</span>の<br>ライン全体を知っていただく記事へ</h1>
+      <p class="sub">全5品レビュー記事（メイン）× Meta広告配信｜誘導記事オプション付き</p>
+      <div class="meta">
+        <div><div class="k">ご提案先</div><div class="v">東菱薬品工業株式会社 御中</div></div>
+        <div><div class="k">対象</div><div class="v">セポラージュ アンヴェール（全5品）</div></div>
+        <div><div class="k">基本プラン</div><div class="v">180,000円（税込198,000円）</div></div>
+        <div><div class="k">作成日</div><div class="v">2026年10月7日</div></div>
+      </div>
+      <div class="brand">株式会社新東通信｜エステティック通信</div>
+    </div>
+    <div class="ph">
+      <img src="https://tobishi-cosme.com/wp-content/themes/tbcosme/assets/images/hero/topimg_home-cepo-unveil.jpg" alt="セポラージュ アンヴェール シリーズ">
+      <span class="cap">画像出典：東菱薬品工業株式会社 公式サイト</span>
+    </div>
+  </section>
+
+  <!-- 01 ご意向の反映 -->
+  <section class="sec" id="policy">
+    <h2 class="s-title"><span class="no">01</span>いただいたご意見と、本書での反映内容</h2>
+    <p class="s-lead">前回の4案に対するご意見をもとに、記事の構成を「B-1 全5品レビュー」を中心とした形に整理しました。</p>
+    <table class="fb">
+      <thead><tr><th>いただいたご意見</th><th>本書での対応</th></tr></thead>
+      <tbody>
+        <tr><td>今回の目的にはB-1「全5品レビュー型」が合っている</td><td><b>B-1をメイン記事に決定</b>。「セポラージュとは」「アンヴェールとは」「各製品はどのような商品か」が1本で分かる構成にしました</td></tr>
+        <tr><td>クレンジングへの関心をきっかけに、ローション・クリームなどシリーズ全体へ興味を広げたい</td><td>メイン記事の前半にクレンジングの章を設け、そこから全5品の紹介へ自然につなげる流れにしました</td></tr>
+        <tr><td>レーダーチャートや「最初に導入するならどれか」など、優劣をつける見せ方は不要</td><td>評価・順位づけを削除し、<b>役割・使用感・特徴・提案しやすいお客様の一覧表</b>に変更しました</td></tr>
+        <tr><td>「W洗顔不要」は強く打ち出さない。人工角栓を用いた洗浄試験を重視し、毛穴・角栓汚れを中心に</td><td>クレンジングの訴求軸を<b>人工角栓を用いた洗浄試験</b>に変更し、乳化不要・美容成分約80%・マツエク配慮処方を組み合わせました。「W洗顔不要」は記載していません</td></tr>
+        <tr><td>「角栓 クレンジング」「毛穴汚れ クレンジング」「サロン専売 毛穴 クレンジング」の需要・競合を確認してほしい</td><td>検索結果の上位を確認し、次の「02 キーワード再調査」に結果をまとめました</td></tr>
+        <tr><td>A-1「展示会で完売したクレンジング」の切り口は、誘導記事として活用してB-1へつなげたい</td><td>ご提示のタイトル案で<b>誘導記事（オプション）</b>として設計し、本文からメイン記事へ誘導します</td></tr>
+      </tbody>
+    </table>
+
+    <p class="sec-label" style="margin-top:24px;">記事の導線</p>
+    <div class="flow">
+      <div class="nd opt">
+        <div class="h">誘導記事｜オプション<b>展示会で完売したクレンジング</b></div>
+        <div class="im"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/clenser.jpg" alt="リュクス オイルジェル クレンザー"></div>
+        <div class="t">「角栓」「毛穴汚れ」を探すサロン従事者を集め、クレンジングから関心を持っていただく</div>
+      </div>
+      <div class="ar">›</div>
+      <div class="nd main">
+        <div class="h">メイン記事<b>アンヴェール全5品レビュー</b></div>
+        <div class="im wide"><img src="https://tobishi-cosme.com/wp-content/themes/tbcosme/assets/images/products/prdctnav/img_cepolage_unv.jpg" alt="セポラージュ アンヴェール 全5品"></div>
+        <div class="t">ブランドの背景と5品それぞれの役割を1本で伝える。展示会・代理店で知ったサロンが後から検索した時の受け皿</div>
+      </div>
+      <div class="ar">›</div>
+      <div class="nd goal">
+        <div class="h">ゴール<b>導入のお問い合わせ</b></div>
+        <div class="t">記事内の問い合わせ導線から、導入・取り扱いのご相談へ</div>
+      </div>
+    </div>
+    <div class="meta-under">Meta広告（2週間・50,000円）で、公開直後からエステ経営者・従事者を記事へ誘導します</div>
+  </section>
+
+  <!-- 02 プラン -->
+  <section class="sec" id="plan">
+    <h2 class="s-title"><span class="no">02</span>プラン・お見積り</h2>
+    <p class="s-lead">メイン記事とMeta広告をセットにした基本プランに、誘導記事をオプションとして追加いただけます。</p>
+    <div class="g2" style="grid-template-columns:1.5fr 1fr;align-items:start;">
+      <table class="price">
+        <thead><tr><th>項目</th><th>内容</th><th style="text-align:right;">金額（税別）</th></tr></thead>
+        <tbody>
+          <tr><td>メイン記事</td><td>アンヴェール全5品レビュー記事 1本<br><span style="color:var(--muted);font-size:11px;">キーワード設計・取材・撮影・編集・薬機法チェック込み</span></td><td class="r"><span class="strike">250,000円</span>150,000円</td></tr>
+          <tr><td>Meta広告配信</td><td>エス通アカウントからトラフィック配信<br><span style="color:var(--muted);font-size:11px;">2週間／クリエイティブ制作・運用・レポート込み</span></td><td class="r">50,000円</td></tr>
+          <tr class="sub"><td colspan="2">小計</td><td class="r">200,000円</td></tr>
+          <tr class="disc"><td colspan="2">WEBリニューアル記念 特別調整</td><td class="r">−20,000円</td></tr>
+          <tr class="total"><td colspan="2">基本プラン（税別）／税込198,000円</td><td class="r">180,000円</td></tr>
+          <tr class="opt"><td>誘導記事<span class="tagopt">オプション</span></td><td>展示会で完売したクレンジングの記事 1本<br><span style="color:var(--muted);font-size:11px;">計上月をメイン記事とずらすことも可能です</span></td><td class="r">+50,000円</td></tr>
+          <tr class="sub"><td colspan="2"><b>オプション追加時の合計</b>（税込253,000円）</td><td class="r"><b>230,000円</b></td></tr>
+        </tbody>
+      </table>
+      <div class="price-box">
+        <div class="price-hero">
+          <div class="k">基本プラン</div>
+          <div class="big">180,000<small>円（税別）</small></div>
+          <div>税込 198,000円</div>
+        </div>
+        <div class="price-opt">
+          <div class="k">＋ 誘導記事オプション</div>
+          <div class="big">50,000<small>円（税別）／税込55,000円</small></div>
+          <p>ご予算の都合に合わせ、メイン記事と別の月に計上していただけます（例：メイン記事は11月、誘導記事は12月）</p>
+        </div>
+      </div>
+    </div>
+    <div class="disclaimer">※Meta広告費50,000円は全額を配信費に充てます。※記事の掲載期間は無期限です。※導入サロンの取材は都内近郊1件を想定しています。</div>
+  </section>
+
+  <!-- 03 キーワード再調査 -->
+  <section class="sec" id="kw">
+    <h2 class="s-title"><span class="no">03</span>キーワード再調査：「角栓」「毛穴汚れ」の検索需要と競合</h2>
+    <p class="s-lead">ご提示いただいたキーワードについて、検索結果の上位を確認しました。大きなキーワードは一般向けの大手美容メディアが上位を占める一方、<b>「サロン専売」「エステ」と組み合わせた検索では、サロン従事者向けの記事がほぼ存在しません</b>。</p>
+    <div class="g2" style="grid-template-columns:1.55fr 1fr;align-items:start;">
+      <div>
+        <p class="sec-label">誘導記事で狙うキーワード（クレンジング）</p>
+        <div class="rb head"><div>検索キーワード</div><div>想定月間検索数（推定）</div><div style="text-align:right;">件/月</div><div style="text-align:center;">状況</div></div>
+        <div class="rb new"><div class="kw">毛穴汚れ クレンジング</div><div class="track2"><div class="seg full" style="width:100%;"></div></div><div class="val">3,000〜6,000</div><div class="st full">飽和</div></div>
+        <div class="rb new"><div class="kw">角栓 クレンジング</div><div class="track2"><div class="seg full" style="width:67%;"></div></div><div class="val">2,000〜4,000</div><div class="st full">飽和</div></div>
+        <div class="rb new"><div class="kw">サロン専売 毛穴 クレンジング</div><div class="track2"><div class="seg thin" style="width:4%;"></div></div><div class="val">50〜150</div><div class="st thin">手薄</div></div>
+        <div class="rb"><div class="kw">マツエク対応 クレンジング サロン専売</div><div class="track2"><div class="seg thin" style="width:2.5%;"></div></div><div class="val">50〜100</div><div class="st thin">手薄</div></div>
+        <div class="rb"><div class="kw">角栓 クレンジング エステ／サロン</div><div class="track2"><div class="seg gap" style="width:2%;"></div></div><div class="val">30〜80</div><div class="st gap">空白</div></div>
+        <div class="rb"><div class="kw">セポラージュ クレンジング</div><div class="track2"><div class="seg gap" style="width:1.5%;"></div></div><div class="val">30〜60</div><div class="st gap">空白</div></div>
+        <div class="rb"><div class="kw">人工角栓 洗浄試験 クレンジング</div><div class="track2"><div class="seg gap" style="width:1%;"></div></div><div class="val">10〜30</div><div class="st gap">空白</div></div>
+        <p class="sec-label" style="margin-top:18px;">メイン記事で狙うキーワード（ブランド・シリーズ）</p>
+        <div class="rb"><div class="kw">セポラージュ 口コミ</div><div class="track2"><div class="seg thin" style="width:100%;"></div></div><div class="val">200〜350</div><div class="st thin">手薄</div></div>
+        <div class="rb"><div class="kw">セポラージュ 効果</div><div class="track2"><div class="seg thin" style="width:51%;"></div></div><div class="val">100〜180</div><div class="st thin">手薄</div></div>
+        <div class="rb"><div class="kw">セポラージュ 卸／サロン専売</div><div class="track2"><div class="seg gap" style="width:29%;"></div></div><div class="val">50〜100</div><div class="st gap">空白</div></div>
+        <div class="rb"><div class="kw">セポラージュ アンヴェール</div><div class="track2"><div class="seg thin" style="width:17%;"></div></div><div class="val">30〜60</div><div class="st thin">手薄</div></div>
+        <div class="rb"><div class="kw">セポラージュ アンヴェール 口コミ／効果</div><div class="track2"><div class="seg gap" style="width:14%;"></div></div><div class="val">20〜50</div><div class="st gap">空白</div></div>
+        <div class="rb"><div class="kw">ボヴァインバイオアクト</div><div class="track2"><div class="seg gap" style="width:4%;"></div></div><div class="val">5〜15</div><div class="st gap">空白</div></div>
+        <div class="legend"><span><i style="background:var(--gap)"></i>空白：サロン向け記事なし</span><span><i style="background:var(--thin)"></i>手薄：消費者向け記事のみ</span><span><i style="background:var(--full)"></i>飽和：大手美容メディアが上位を独占</span></div>
+        <p class="credit">※棒の長さは各グループ内の最大値を100%とした相対比較です。「ご提示」はご指摘いただいたキーワードです。</p>
+      </div>
+      <div>
+        <div class="insight" style="grid-template-columns:1fr;margin-top:0;">
+          <div class="c a"><b>「角栓 クレンジング」「毛穴汚れ クレンジング」</b>検索数は大きいものの、上位は大手美容誌のWEB版やランキング記事が独占。一般消費者向けで、単独での上位表示は難しい状況です。</div>
+          <div class="c b"><b>「サロン専売 毛穴 クレンジング」</b>上位は一般消費者向けのランキング記事のみで、サロン従事者向けの解説記事はありません。<b>最も狙いやすく、製品の特徴とも合うキーワード</b>です。</div>
+          <div class="c c"><b>記事での使い方</b>大きなキーワードはタイトル・見出しに含めて関連検索を広く拾い、主な狙いは「サロン専売」「エステ」「人工角栓」と組み合わせた検索に置きます。「人工角栓を用いた洗浄試験」は他社の記事にほぼない、貴社だけの切り口です。</div>
+        </div>
+      </div>
+    </div>
+    <div class="funnel">
+      <div class="fb"><div class="l">狙うキーワードの月間検索数</div><div class="v">575〜1,175件</div><div class="f">空白・手薄の合計（飽和を除く）</div></div>
+      <div class="ar">›</div>
+      <div class="fb"><div class="l">記事への流入</div><div class="v">約86〜294PV/月</div><div class="f">×クリック率15〜25%</div></div>
+      <div class="ar">›</div>
+      <div class="fb"><div class="l">問い合わせ</div><div class="v">約0.4〜3件/月</div><div class="f">×0.5〜1%</div></div>
+      <div class="ar">›</div>
+      <div class="fb" style="background:#fff;"><div class="l">年間換算</div><div class="v">約5〜35件</div><div class="f">メイン＋誘導記事の合計</div></div>
+    </div>
+    <div class="disclaimer">※検索数はGoogleキーワードプランナー等の実測値ではなく、検索結果上位の内容・関連検索の広がり・競合状況からの推定値です（2026年10月7日時点で確認）。試算は上位表示できた場合の参考値であり、成果を保証するものではありません。誘導記事を実施しない場合、メイン記事のみで約61〜189PV/月・問い合わせ約0.3〜1.9件/月が目安です。</div>
+  </section>
+
+  <!-- 04 メイン記事 -->
+  <section class="sec" id="main">
+    <h2 class="s-title"><span class="no">04</span>メイン記事：アンヴェール全5品レビュー</h2>
+    <p class="s-lead">ブランドの背景からクレンジング、全5品の役割までを1本で伝える記事です。展示会や代理店でアンヴェールを知ったサロンが後から検索した時に、まず読んでいただく記事として長く活用できます。</p>
+    <div class="art-head"><div class="id">MAIN<br>記事</div><div><div class="tag">FULL SERIES REVIEW｜タイトル案</div><h3>製薬企業発のサロン専売ブランド「セポラージュ」の新シリーズ「アンヴェール」とは？全5品の役割と使用感をエステティシャンがレビュー</h3></div></div>
+    <div class="art-body">
+      <div class="art-cols">
+        <div>
+          <p class="sec-label">記事構成（見出し案）</p>
+          <ol class="toc">
+            <li><b>「セポラージュ」とは</b><span>1959年創業の製薬企業が1981年から手がけるサロン専売化粧品ブランド。業務用シリーズとアンヴェールの関係を整理</span></li>
+            <li><b>「セポラージュ アンヴェール」とは</b><span>2026年5月発表のホームケアシリーズ。全品共通の整肌成分「ボヴァイン バイオアクト」を公式発表の範囲で解説</span></li>
+            <li class="key"><b>入口はクレンジング：展示会で完売したオイルジェルクレンザー</b><span>BWJ東京・トレードフェアでの反響と、人工角栓を用いた洗浄試験・乳化不要・美容成分約80%・マツエク配慮処方を紹介</span></li>
+            <li class="key"><b>全5品の役割と使用感（一覧）</b><span>5品それぞれの役割・使用感・特徴・提案しやすいお客様を一覧で紹介。エステティシャンの使用コメント付き（優劣・順位はつけません）</span></li>
+            <li><b>ラインで使う流れと、施術後のホームケア提案の例</b><span>クレンジング→洗顔→ローション→クリーム、日中はUVセラム。施術後のカウンセリングでの提案例</span></li>
+            <li><b>導入サロンの声</b><span>取材サロンでの使い方、お客様の反応</span></li>
+            <li><b>よくある質問</b><span>「業務用シリーズとの違いは？」「香りは？」「導入方法は？」等の一問一答</span></li>
+            <li><b>導入・お問い合わせ</b></li>
+          </ol>
+        </div>
+        <div>
+          <div class="meta-box"><div class="mk">取材・制作内容</div>導入サロン1店舗の取材・撮影＋エステティシャンによる全5品の使用コメント（製品のご提供をお願いします）</div>
+          <div class="meta-box"><div class="mk">狙うキーワード</div><span class="kwtag">セポラージュ 口コミ</span><span class="kwtag">セポラージュ 効果</span><span class="kwtag">セポラージュ アンヴェール</span><span class="kwtag">セポラージュ 卸／サロン専売</span><span class="kwtag">ボヴァインバイオアクト</span><span class="kwtag">サロン専売 毛穴 クレンジング</span></div>
+          <div class="meta-box"><div class="mk">この記事の役割</div>「セポラージュとは」「アンヴェールとは」に答える定義文を各章の冒頭に置き、AI検索（ChatGPT・Google AI Overviews等）にも引用されやすい構成にします。</div>
+        </div>
+      </div>
+
+      <p class="sec-label" style="margin-top:20px;">記事内の一覧表（イメージ）：全5品の役割と使用感</p>
+      <table class="roles">
+        <thead><tr><th>製品</th><th>役割</th><th>使用感</th><th>特徴</th><th>提案しやすいお客様</th></tr></thead>
+        <tbody>
+          <tr class="entry"><td class="p"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/clenser.jpg" alt=""><b>リュクス オイルジェル クレンザー</b><span>200ml／6,600円</span></td><td class="role">メイク・毛穴汚れを落とす</td><td>バター状のなめらかな質感で、こすらずになじむ</td><td>人工角栓を用いた洗浄試験済み／乳化不要／美容成分約80%／マツエク配慮処方</td><td>毛穴・角栓汚れが気になる方、マツエクをされている方</td></tr>
+          <tr><td class="p"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/wash.jpg" alt=""><b>アミノトリートメント フェイスウォッシュ</b><span>100g／5,500円</span></td><td class="role">肌をやさしく洗う</td><td>濃密できめ細かな泡が肌に密着</td><td>アミノ酸系洗浄成分で摩擦を抑えて洗い上げる</td><td>洗顔時の摩擦や洗い上がりのつっぱりが気になる方</td></tr>
+          <tr><td class="p"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/lotion.jpg" alt=""><b>ビタエッセンス ローション</b><span>200ml／9,900円</span></td><td class="role">うるおいを与え、肌を整える</td><td>保湿感と使い心地のバランスを追求</td><td>ビタミン・アミノ酸を組み合わせて配合</td><td>肌タイプを問わず、ホームケアの中心として</td></tr>
+          <tr><td class="p"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/cream.jpg" alt=""><b>ブルーム クチュールクリーム</b><span>50g／11,000円</span></td><td class="role">うるおいを閉じ込め、肌を守る</td><td>バターのようにとろけるリッチな質感</td><td>ナイアシンアミド・グリチルリチン酸（整肌）、シアバター、エクトイン配合</td><td>乾燥や年齢による肌の変化が気になる方</td></tr>
+          <tr><td class="p"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/uv.jpg" alt=""><b>UVプロテクティブ リペアセラム</b><span>50g／6,600円</span></td><td class="role">日中の紫外線から肌を守る</td><td>伸びが良く、きしみのない使用感</td><td>SPF50+／PA++++、ノンケミカル処方、自然なトーンアップ（メイクアップ効果）</td><td>施術後の日中ケアを重視する方、ノンケミカル処方を希望する方</td></tr>
+        </tbody>
+      </table>
+      <p class="credit">※価格は公式小売価格（税込）。製品画像・情報出典：東菱薬品工業株式会社 公式サイト／2026年5月11日付プレスリリース。記事内の使用感は取材時のエステティシャンのコメントをもとに記載します。</p>
+    </div>
+    <div class="disclaimer">※成分・試験に関する記載は貴社公式発表の範囲に限定し、効能の断定は行いません。「展示会で完売」の記載は貴社に事実関係をご確認いただいたうえで掲載します。</div>
+  </section>
+
+  <!-- 05 誘導記事 -->
+  <section class="sec" id="sub">
+    <h2 class="s-title"><span class="no">05</span>誘導記事（オプション）：展示会で完売したクレンジング</h2>
+    <p class="s-lead">ご評価いただいた「展示会で完売」の切り口を、毛穴・角栓汚れを軸にした記事にします。クレンジングで関心を持った読者を、本文からメイン記事（全5品レビュー）へご案内します。</p>
+    <div class="art-head opt"><div class="id">誘導<br>記事</div><div><div class="tag">OPTION｜タイトル案（ご提示案を採用）</div><h3>展示会で完売したサロン専売クレンジングは何が違う？人工角栓を用いた洗浄試験にも注目</h3></div></div>
+    <div class="art-body">
+      <div class="art-cols">
+        <div>
+          <p class="sec-label">記事構成（見出し案）</p>
+          <ol class="toc">
+            <li><b>BWJ東京・トレードフェアで完売したクレンジング</b><span>展示会での反響、その場で発注したサロンの声</span></li>
+            <li><b>サロンのお客様に多い「毛穴・角栓汚れ」の悩み</b><span>施術の現場で聞かれる悩みと、日々のクレンジングの大切さをサロン目線で解説</span></li>
+            <li class="key"><b>人工角栓を用いた洗浄試験とは</b><span>貴社が実施した試験の内容を、公式発表の範囲で分かりやすく紹介</span></li>
+            <li><b>乳化不要・美容成分約80%・マツエク配慮処方</b><span>サロンでの施術前クレンジングとしても、店販としても使いやすい理由</span></li>
+            <li><b>エステティシャンの使用レビュー</b><span>使用感・なじませ方・洗い上がりのコメント</span></li>
+            <li class="key"><b>クレンジングの次に：アンヴェールのラインケア</b><span>洗顔・ローション・クリーム・UVセラムを簡単に紹介し、メイン記事（全5品レビュー）へ誘導</span></li>
+          </ol>
+        </div>
+        <div>
+          <div class="meta-box"><div class="mk">訴求ポイントの優先順位</div>
+            <div class="pts">
+              <div class="main"><b>人工角栓</b>洗浄試験</div>
+              <div><b>乳化不要</b>なじませるだけ</div>
+              <div><b>約80%</b>美容成分</div>
+              <div><b>マツエク</b>配慮処方</div>
+            </div>
+          </div>
+          <div class="meta-box"><div class="mk">狙うキーワード</div><span class="kwtag">サロン専売 毛穴 クレンジング</span><span class="kwtag">角栓 クレンジング エステ</span><span class="kwtag">人工角栓 洗浄試験</span><span class="kwtag">マツエク対応 クレンジング サロン専売</span><span class="kwtag">セポラージュ クレンジング</span><br><span style="font-size:10.5px;color:var(--muted);">タイトル・見出しに「角栓 クレンジング」「毛穴汚れ クレンジング」も含めます</span></div>
+          <div class="meta-box"><div class="mk">取材・制作内容</div>メイン記事の取材時に、クレンジングの使用コメント・撮影をあわせて実施します（追加の取材日は不要です）</div>
+        </div>
+      </div>
+    </div>
+    <div class="disclaimer">※化粧品の表現範囲に沿い、「毛穴の汚れを落とす」等の洗浄に関する表現にとどめ、「毛穴が消える・引き締まる」等の表現は用いません。</div>
+  </section>
+
+  <!-- 06 Meta -->
+  <section class="sec" id="meta">
+    <h2 class="s-title"><span class="no">06</span>Meta広告配信：配信設計と試算</h2>
+    <p class="s-lead">記事公開から2週間、エステティック通信の公式アカウントから「トラフィック（記事への誘導）」を目的に配信します。媒体名での配信のため、第三者メディアの記事として読まれやすいのが特長です。</p>
+    <div class="ads">
+      <div class="ad">
+        <div class="top"><div class="av">エス通</div><div class="nm">エステティック通信<span>広告</span></div></div>
+        <div class="cr"><img class="contain" src="https://tobishi-cosme.com/wp-content/uploads/2026/04/clenser.jpg" alt=""><span class="badge2">展示会で完売</span><div class="ov">展示会で完売した<br>サロン専売クレンジング</div></div>
+        <div class="cta"><span>esthetic-tsushin…</span><b>詳しくはこちら</b></div>
+        <div class="lbl">① 実績訴求</div>
+      </div>
+      <div class="ad">
+        <div class="top"><div class="av">エス通</div><div class="nm">エステティック通信<span>広告</span></div></div>
+        <div class="cr"><img class="contain" src="https://tobishi-cosme.com/wp-content/uploads/2026/04/clenser.jpg" alt=""><div class="ov light">人工角栓を用いた洗浄試験済み<br>毛穴汚れに着目したクレンジング</div></div>
+        <div class="cta"><span>esthetic-tsushin…</span><b>詳しくはこちら</b></div>
+        <div class="lbl">② 角栓・毛穴汚れ訴求</div>
+      </div>
+      <div class="ad">
+        <div class="top"><div class="av">エス通</div><div class="nm">エステティック通信<span>広告</span></div></div>
+        <div class="cr"><img src="https://tobishi-cosme.com/wp-content/themes/tbcosme/assets/images/products/prdctnav/img_cepolage_unv.jpg" alt=""><div class="ov">製薬企業発のサロン専売ブランド<br>新シリーズ全5品をレビュー</div></div>
+        <div class="cta"><span>esthetic-tsushin…</span><b>詳しくはこちら</b></div>
+        <div class="lbl">③ シリーズ訴求</div>
+      </div>
+    </div>
+    <p class="credit">※クリエイティブはイメージです。実際は取材写真を含め約5パターンで配信し、反応の良い訴求に予算を寄せて最適化します。誘導記事を実施する場合は①②の遷移先を誘導記事にし、そこからメイン記事へ送ります。</p>
+
+    <div class="g2" style="grid-template-columns:1.25fr 1fr;align-items:start;margin-top:20px;">
+      <div>
+        <p class="sec-label">試算（エス通Meta広告64キャンペーンの実績平均：CPM 908円・CPC 52円）</p>
+        <table class="calc">
+          <thead><tr><th>指標</th><th>計算式</th><th>2週間の試算</th></tr></thead>
+          <tbody>
+            <tr><td>表示回数</td><td>50,000円 ÷ CPM 908円 × 1,000</td><td class="num">約55,000回</td></tr>
+            <tr><td>リーチ（届く人数）</td><td>表示回数 × 約54%（実績比率）</td><td class="num">約30,000人</td></tr>
+            <tr><td><b>追加PV</b></td><td>50,000円 ÷ CPC 52円<br><span style="color:var(--muted);font-size:11px;">CPC 40〜60円の幅で約830〜1,250</span></td><td class="num" style="font-size:15px;">約960PV</td></tr>
+            <tr><td>問い合わせ（0.5%）</td><td>960PV × 0.5%</td><td class="num">約5件</td></tr>
+            <tr><td>問い合わせ（1%）</td><td>960PV × 1%</td><td class="num">約10件</td></tr>
+            <tr><td>1件あたり広告費</td><td>50,000円 ÷ 5〜10件</td><td class="num">約5,000〜10,000円</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div class="kpi"><div class="c">2週間の追加PV</div><div class="n">約960<small>PV</small></div><div class="c">記事の検索流入（月86〜294PV）の約3〜11か月分を公開直後に確保</div></div>
+        <div class="cv-wrap">
+          <div class="cv lo"><div class="k">問い合わせ率 0.5%</div><div class="n">約5件</div><div class="f">CPCの幅を考慮：4〜6件</div></div>
+          <div class="cv hi"><div class="k">問い合わせ率 1%</div><div class="n">約10件</div><div class="f">CPCの幅を考慮：8〜12件</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="disclaimer">※試算値であり、成果を保証するものではありません。問い合わせ率0.5〜1%は記事PVに対する想定値です。過去の記事タイアップ事例ではCPC 26〜31円の実績もあり、その場合の追加PVは約1,600〜1,900PVです。広告文・画像は薬機法・景表法の確認を経て配信します。</div>
+  </section>
+
+  <!-- 07 進め方 -->
+  <section class="sec" id="next">
+    <h2 class="s-title"><span class="no">07</span>今後の進め方</h2>
+    <p class="s-lead">10月中にご発注いただいた場合の例です。誘導記事は同じ取材で制作し、メイン記事と同時、または翌月の公開も可能です。</p>
+    <div class="tl">
+      <div class="s"><div class="w">STEP 1</div><b>ご発注</b>基本プラン／誘導記事オプションの有無、計上月のご指定</div>
+      <div class="s"><div class="w">STEP 2｜〜2週目</div><b>取材・撮影</b>取材サロンのご紹介、製品のご提供</div>
+      <div class="s"><div class="w">STEP 3｜〜3週目</div><b>原稿確認</b>貴社確認・薬機法チェック</div>
+      <div class="s hl"><div class="w">STEP 4｜4週目〜</div><b>記事公開</b>同時にMeta広告の配信開始</div>
+      <div class="s"><div class="w">STEP 5｜公開2週間後</div><b>レポート</b>PV・問い合わせ数のご報告</div>
+    </div>
+    <div class="footnote">本書の検索数・PV・問い合わせ数はすべて試算・参考値であり、成果を保証するものではありません。<br>製品画像・製品情報は東菱薬品工業株式会社 公式サイトおよび2026年5月11日付プレスリリースの公開情報に基づきます。<br>株式会社新東通信｜エステティック通信</div>
+  </section>
+
+</div>
+</body>
+</html>
