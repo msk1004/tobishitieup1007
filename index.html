@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WEBリニューアル記念 記事タイアップご提案（改訂版）｜セポラージュ アンヴェール｜東菱薬品工業株式会社 御中</title>
+<title>WEBリニューアル記念 記事タイアップご提案（改訂第2版）｜セポラージュ アンヴェール｜東菱薬品工業株式会社 御中</title>
 <style>
   :root{
     --page:#F6F4F8;--ink:#33323A;--muted:#77756E;--navy:#1F2A44;--navy-soft:#3B4A6B;
@@ -57,6 +57,15 @@
   table.fb th{background:var(--navy);color:#fff;font-size:11.5px;}
   table.fb td:first-child{background:var(--lav-pale);color:var(--navy-soft);width:42%;}
 
+  /* 変更点 */
+  .chg{border:2px solid var(--navy);}
+  table.diff th,table.diff td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;font-size:12.5px;}
+  table.diff th{background:var(--navy);color:#fff;font-size:11.5px;}
+  table.diff td.k{background:var(--lav-pale);font-weight:700;color:var(--navy);white-space:nowrap;width:150px;}
+  table.diff td.old{color:var(--muted);text-decoration:line-through;text-decoration-color:rgba(178,59,59,.5);width:30%;}
+  table.diff td.new{color:var(--navy);font-weight:700;}
+  table.diff td.new span{display:block;font-weight:400;color:var(--muted);font-size:11px;margin-top:2px;}
+  .newmark{display:inline-block;background:#B23B3B;color:#fff;font-size:9.5px;font-weight:700;border-radius:4px;padding:0 6px;margin-left:6px;vertical-align:2px;text-decoration:none;}
   /* 導線図 */
   .flow{display:grid;grid-template-columns:1fr 34px 1.25fr 34px .8fr;align-items:stretch;margin-top:20px;}
   .flow .nd{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#fff;display:flex;flex-direction:column;}
@@ -196,6 +205,7 @@
   .footnote{font-size:10.5px;color:var(--muted);text-align:center;margin-top:18px;line-height:1.7;}
 
   @media (max-width:900px){
+    table.diff{display:block;overflow-x:auto;}
     .sec{padding:28px 20px;}
     .cover{grid-template-columns:1fr;}
     .cover .txt{padding:34px 22px;}
@@ -218,7 +228,7 @@
 
 <nav class="toc-nav"><div class="in">
   <span class="logo">CEPOLAGE Unveil</span>
-  <a href="#policy">ご意向の反映</a><a href="#plan">プラン</a><a href="#kw">キーワード再調査</a><a href="#main">メイン記事</a><a href="#sub">誘導記事</a><a href="#meta">Meta広告</a><a href="#next">進め方</a>
+  <a href="#changes">今回の変更点</a><a href="#policy">記事の導線</a><a href="#plan">プラン</a><a href="#kw">キーワード再調査</a><a href="#main">メイン記事</a><a href="#sub">誘導記事</a><a href="#meta">Meta広告</a><a href="#next">進め方</a>
 </div></nav>
 
 <div class="wrap">
@@ -227,14 +237,14 @@
   <section class="sec cover">
     <div class="txt">
       <div class="mark">ESTHETIC TSUSHIN WEB ／ RENEWAL CAMPAIGN</div>
-      <span class="eyebrow">記事タイアップご提案｜改訂版</span>
+      <span class="eyebrow">記事タイアップご提案｜改訂第2版</span>
       <h1>クレンジングへの関心を入口に、<br><span>セポラージュ アンヴェール</span>の<br>ライン全体を知っていただく記事へ</h1>
-      <p class="sub">全5品レビュー記事（メイン）× Meta広告配信｜誘導記事オプション付き</p>
+      <p class="sub">全5品レビュー記事（メイン）× Meta広告配信｜誘導記事オプション（税別45,000円）</p>
       <div class="meta">
         <div><div class="k">ご提案先</div><div class="v">東菱薬品工業株式会社 御中</div></div>
         <div><div class="k">対象</div><div class="v">セポラージュ アンヴェール（全5品）</div></div>
         <div><div class="k">基本プラン</div><div class="v">180,000円（税込198,000円）</div></div>
-        <div><div class="k">作成日</div><div class="v">2026年10月7日</div></div>
+        <div><div class="k">作成日</div><div class="v">2026年10月8日</div></div>
       </div>
       <div class="brand">株式会社新東通信｜エステティック通信</div>
     </div>
@@ -244,23 +254,27 @@
     </div>
   </section>
 
-  <!-- 01 ご意向の反映 -->
-  <section class="sec" id="policy">
-    <h2 class="s-title"><span class="no">01</span>いただいたご意見と、本書での反映内容</h2>
-    <p class="s-lead">前回の4案に対するご意見をもとに、記事の構成を「B-1 全5品レビュー」を中心とした形に整理しました。</p>
-    <table class="fb">
-      <thead><tr><th>いただいたご意見</th><th>本書での対応</th></tr></thead>
+  <!-- 00 変更点 -->
+  <section class="sec chg" id="changes">
+    <h2 class="s-title"><span class="no">00</span>前回（10/7版）からの変更・調整点</h2>
+    <p class="s-lead">10/7版へのご意見と、ご提供いただいたアンヴェール発表会資料をもとに、以下の6点を調整しました。本文中の該当箇所には<span class="newmark">変更</span>の印を付けています。</p>
+    <table class="diff">
+      <thead><tr><th>項目</th><th>10/7版</th><th>今回（10/8版）</th></tr></thead>
       <tbody>
-        <tr><td>今回の目的にはB-1「全5品レビュー型」が合っている</td><td><b>B-1をメイン記事に決定</b>。「セポラージュとは」「アンヴェールとは」「各製品はどのような商品か」が1本で分かる構成にしました</td></tr>
-        <tr><td>クレンジングへの関心をきっかけに、ローション・クリームなどシリーズ全体へ興味を広げたい</td><td>メイン記事の前半にクレンジングの章を設け、そこから全5品の紹介へ自然につなげる流れにしました</td></tr>
-        <tr><td>レーダーチャートや「最初に導入するならどれか」など、優劣をつける見せ方は不要</td><td>評価・順位づけを削除し、<b>役割・使用感・特徴・提案しやすいお客様の一覧表</b>に変更しました</td></tr>
-        <tr><td>「W洗顔不要」は強く打ち出さない。人工角栓を用いた洗浄試験を重視し、毛穴・角栓汚れを中心に</td><td>クレンジングの訴求軸を<b>人工角栓を用いた洗浄試験</b>に変更し、乳化不要・美容成分約80%・マツエク配慮処方を組み合わせました。「W洗顔不要」は記載していません</td></tr>
-        <tr><td>「角栓 クレンジング」「毛穴汚れ クレンジング」「サロン専売 毛穴 クレンジング」の需要・競合を確認してほしい</td><td>検索結果の上位を確認し、次の「02 キーワード再調査」に結果をまとめました</td></tr>
-        <tr><td>A-1「展示会で完売したクレンジング」の切り口は、誘導記事として活用してB-1へつなげたい</td><td>ご提示のタイトル案で<b>誘導記事（オプション）</b>として設計し、本文からメイン記事へ誘導します</td></tr>
+        <tr><td class="k">① クレンジングの使用感</td><td class="old">バター状のなめらかな質感で、こすらずになじむ</td><td class="new">厚みのあるオイルジェルが肌を包み込み、こすらずなめらかになじむ<span>「バター状」はクリームに近い表現のため使用しません。オイルの洗浄力とジェルの厚みによるクッション性で摩擦を抑える設計として記載します</span></td></tr>
+        <tr><td class="k">② 乳化不要の表現</td><td class="old">乳化不要　なじませるだけ</td><td class="new">乳化不要　乳化のひと手間なく、そのまますすげる<span>なじませた後にすすぎが必要なことが分かる表現に変更しました</span></td></tr>
+        <tr><td class="k">③ クレンジングの活用シーン</td><td class="old">サロンでの施術前クレンジングとしても、店販としても使いやすい理由</td><td class="new">毛穴ケアなどのサロン施術から、ホームケア提案まで活用しやすい理由<span>貴社がご提案している毛穴ケアメニューと200mLの容量を踏まえ、「施術前」に限定しない表現にしました</span></td></tr>
+        <tr><td class="k">④ ローションの提案先</td><td class="old">肌タイプを問わず、ホームケアの中心として</td><td class="new">保湿感と使い心地のバランスを求める方<span>言い切りの強い表現を避けました</span></td></tr>
+        <tr><td class="k">⑤ 誘導記事の価格</td><td class="old">50,000円（税込55,000円）</td><td class="new">45,000円（税込49,500円）<span>税抜5万円未満に調整しました。計上月をメイン記事とずらすことも引き続き可能です。オプション追加時の合計は225,000円（税込247,500円）です</span></td></tr>
+        <tr><td class="k">⑥ 発表会資料の反映</td><td class="old">公式サイト・プレスリリースの情報のみ</td><td class="new">メイン記事の構成と5品の一覧に反映<span>ブランド誕生の背景、ボヴァイン バイオアクトの由来、3種の香りの設計、各品の処方・使用量の目安を追加しました。発表会用の表現はそのまま使わず、記事作成時に薬機法・景表法を確認して表現を決めます</span></td></tr>
       </tbody>
     </table>
+  </section>
 
-    <p class="sec-label" style="margin-top:24px;">記事の導線</p>
+  <!-- 01 ご意向の反映 -->
+  <section class="sec" id="policy">
+    <h2 class="s-title"><span class="no">01</span>記事の導線（10/7版から変更なし）</h2>
+    <p class="s-lead">10/7版の構成（B-1をメイン記事、展示会で完売したクレンジングを誘導記事）は変えていません。</p>
     <div class="flow">
       <div class="nd opt">
         <div class="h">誘導記事｜オプション<b>展示会で完売したクレンジング</b></div>
@@ -295,8 +309,8 @@
           <tr class="sub"><td colspan="2">小計</td><td class="r">200,000円</td></tr>
           <tr class="disc"><td colspan="2">WEBリニューアル記念 特別調整</td><td class="r">−20,000円</td></tr>
           <tr class="total"><td colspan="2">基本プラン（税別）／税込198,000円</td><td class="r">180,000円</td></tr>
-          <tr class="opt"><td>誘導記事<span class="tagopt">オプション</span></td><td>展示会で完売したクレンジングの記事 1本<br><span style="color:var(--muted);font-size:11px;">計上月をメイン記事とずらすことも可能です</span></td><td class="r">+50,000円</td></tr>
-          <tr class="sub"><td colspan="2"><b>オプション追加時の合計</b>（税込253,000円）</td><td class="r"><b>230,000円</b></td></tr>
+          <tr class="opt"><td>誘導記事<span class="tagopt">オプション</span><span class="newmark">変更</span></td><td>展示会で完売したクレンジングの記事 1本<br><span style="color:var(--muted);font-size:11px;">計上月をメイン記事とずらすことも可能です</span></td><td class="r">+45,000円</td></tr>
+          <tr class="sub"><td colspan="2"><b>オプション追加時の合計</b>（税込247,500円）</td><td class="r"><b>225,000円</b></td></tr>
         </tbody>
       </table>
       <div class="price-box">
@@ -306,8 +320,8 @@
           <div>税込 198,000円</div>
         </div>
         <div class="price-opt">
-          <div class="k">＋ 誘導記事オプション</div>
-          <div class="big">50,000<small>円（税別）／税込55,000円</small></div>
+          <div class="k">＋ 誘導記事オプション<span class="newmark">変更</span></div>
+          <div class="big">45,000<small>円（税別）／税込49,500円</small></div>
           <p>ご予算の都合に合わせ、メイン記事と別の月に計上していただけます（例：メイン記事は11月、誘導記事は12月）</p>
         </div>
       </div>
@@ -370,10 +384,10 @@
         <div>
           <p class="sec-label">記事構成（見出し案）</p>
           <ol class="toc">
-            <li><b>「セポラージュ」とは</b><span>1959年創業の製薬企業が1981年から手がけるサロン専売化粧品ブランド。業務用シリーズとアンヴェールの関係を整理</span></li>
-            <li><b>「セポラージュ アンヴェール」とは</b><span>2026年5月発表のホームケアシリーズ。全品共通の整肌成分「ボヴァイン バイオアクト」を公式発表の範囲で解説</span></li>
-            <li class="key"><b>入口はクレンジング：展示会で完売したオイルジェルクレンザー</b><span>BWJ東京・トレードフェアでの反響と、人工角栓を用いた洗浄試験・乳化不要・美容成分約80%・マツエク配慮処方を紹介</span></li>
-            <li class="key"><b>全5品の役割と使用感（一覧）</b><span>5品それぞれの役割・使用感・特徴・提案しやすいお客様を一覧で紹介。エステティシャンの使用コメント付き（優劣・順位はつけません）</span></li>
+            <li><b>「セポラージュ」とは<span class="newmark">変更</span></b><span>1959年創業の製薬企業が1981年から手がけるサロン専売化粧品ブランド。医療の現場で寄せられた声をきっかけにアンヴェールが生まれた背景と、業務用シリーズとの関係を整理</span></li>
+            <li><b>「セポラージュ アンヴェール」とは<span class="newmark">変更</span></b><span>2026年5月発表のエイジングケア（年齢に応じたお手入れ）シリーズ。全品共通のハリ成分「ボヴァイン バイオアクト」の由来（1955年スイスでの研究、北海道の牛由来原料）と、ヒノキを軸に3種で表情を変える香りの設計を紹介</span></li>
+            <li class="key"><b>入口はクレンジング：展示会で完売したオイルジェルクレンザー</b><span>BWJ東京・トレードフェアでの反響。オイルの洗浄力とジェルの厚みが生むクッション性、人工角栓を用いた洗浄試験、乳化不要、美容成分約80%、マツエク配慮処方。毛穴ケアなどのサロン施術からホームケアまで使える200mL</span></li>
+            <li class="key"><b>全5品の役割と使用感（一覧）</b><span>5品それぞれの役割・使用感・特徴（香り・使用量の目安を含む）・提案しやすいお客様を一覧で紹介。エステティシャンの使用コメント付き（優劣・順位はつけません）</span></li>
             <li><b>ラインで使う流れと、施術後のホームケア提案の例</b><span>クレンジング→洗顔→ローション→クリーム、日中はUVセラム。施術後のカウンセリングでの提案例</span></li>
             <li><b>導入サロンの声</b><span>取材サロンでの使い方、お客様の反応</span></li>
             <li><b>よくある質問</b><span>「業務用シリーズとの違いは？」「香りは？」「導入方法は？」等の一問一答</span></li>
@@ -391,21 +405,21 @@
       <table class="roles">
         <thead><tr><th>製品</th><th>役割</th><th>使用感</th><th>特徴</th><th>提案しやすいお客様</th></tr></thead>
         <tbody>
-          <tr class="entry"><td class="p"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/clenser.jpg" alt=""><b>リュクス オイルジェル クレンザー</b><span>200ml／6,600円</span></td><td class="role">メイク・毛穴汚れを落とす</td><td>バター状のなめらかな質感で、こすらずになじむ</td><td>人工角栓を用いた洗浄試験済み／乳化不要／美容成分約80%／マツエク配慮処方</td><td>毛穴・角栓汚れが気になる方、マツエクをされている方</td></tr>
-          <tr><td class="p"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/wash.jpg" alt=""><b>アミノトリートメント フェイスウォッシュ</b><span>100g／5,500円</span></td><td class="role">肌をやさしく洗う</td><td>濃密できめ細かな泡が肌に密着</td><td>アミノ酸系洗浄成分で摩擦を抑えて洗い上げる</td><td>洗顔時の摩擦や洗い上がりのつっぱりが気になる方</td></tr>
-          <tr><td class="p"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/lotion.jpg" alt=""><b>ビタエッセンス ローション</b><span>200ml／9,900円</span></td><td class="role">うるおいを与え、肌を整える</td><td>保湿感と使い心地のバランスを追求</td><td>ビタミン・アミノ酸を組み合わせて配合</td><td>肌タイプを問わず、ホームケアの中心として</td></tr>
-          <tr><td class="p"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/cream.jpg" alt=""><b>ブルーム クチュールクリーム</b><span>50g／11,000円</span></td><td class="role">うるおいを閉じ込め、肌を守る</td><td>バターのようにとろけるリッチな質感</td><td>ナイアシンアミド・グリチルリチン酸（整肌）、シアバター、エクトイン配合</td><td>乾燥や年齢による肌の変化が気になる方</td></tr>
-          <tr><td class="p"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/uv.jpg" alt=""><b>UVプロテクティブ リペアセラム</b><span>50g／6,600円</span></td><td class="role">日中の紫外線から肌を守る</td><td>伸びが良く、きしみのない使用感</td><td>SPF50+／PA++++、ノンケミカル処方、自然なトーンアップ（メイクアップ効果）</td><td>施術後の日中ケアを重視する方、ノンケミカル処方を希望する方</td></tr>
+          <tr class="entry"><td class="p"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/clenser.jpg" alt=""><b>リュクス オイルジェル クレンザー</b><span>200ml／6,600円</span></td><td class="role">メイク・毛穴汚れを落とす</td><td>厚みのあるオイルジェルが肌を包み込み、こすらずなめらかになじむ<span class="newmark">変更</span></td><td>人工角栓を用いた洗浄試験済み／乳化のひと手間なく、そのまますすげる／美容成分約80%／マツエク配慮処方<br><span style="color:var(--muted)">香り：Fresh Glow（リツエアクベバとヒノキ）／目安2mL</span></td><td>毛穴・角栓汚れが気になる方、マツエクをされている方。毛穴ケアなどのサロン施術にも</td></tr>
+          <tr><td class="p"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/wash.jpg" alt=""><b>アミノトリートメント フェイスウォッシュ</b><span>100g／5,500円</span></td><td class="role">肌をやさしく洗う</td><td>濃密できめ細かな泡が肌に密着</td><td>アミノ酸系洗浄成分で摩擦を抑えて洗い上げる<br><span style="color:var(--muted)">香り：Fresh Glow／目安1g</span></td><td>洗顔時の摩擦や洗い上がりのつっぱりが気になる方</td></tr>
+          <tr><td class="p"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/lotion.jpg" alt=""><b>ビタエッセンス ローション</b><span>200ml／9,900円</span></td><td class="role">うるおいを与え、肌を整える</td><td>保湿感と使い心地のバランスを追求</td><td>6種のビタミン（整肌成分）・8種のアミノ酸（保湿成分）を配合。長く支持されてきた処方を受け継ぎ改良<br><span style="color:var(--muted)">香り：Forest Fruit（ノバラ・ダマスクローズ・フルーツ・ヒノキ）／目安2mL</span></td><td>保湿感と使い心地のバランスを求める方<span class="newmark">変更</span></td></tr>
+          <tr><td class="p"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/cream.jpg" alt=""><b>ブルーム クチュールクリーム</b><span>50g／11,000円</span></td><td class="role">うるおいを閉じ込め、肌を守る</td><td>バターのようにとろける濃厚なテクスチャー</td><td>ナイアシンアミド・グリチルリチン酸2K（整肌成分）、シアバター（エモリエント成分）、エクトイン（皮膚保護成分）配合<br><span style="color:var(--muted)">香り：Quiet Bloom（ノバラ・ダマスクローズ・ヒノキ）／目安1g</span></td><td>乾燥や年齢による肌の変化が気になる方</td></tr>
+          <tr><td class="p"><img src="https://tobishi-cosme.com/wp-content/uploads/2026/04/uv.jpg" alt=""><b>UVプロテクティブ リペアセラム</b><span>50g／6,600円</span></td><td class="role">日中の紫外線から肌を守る</td><td>伸びが良く、きしみのない使用感</td><td>SPF50+／PA++++、UV耐水性☆☆、ノンケミカル処方、石鹸で落とせる、白浮きを抑えた自然なトーンアップ（メイクアップ効果）<br><span style="color:var(--muted)">無香料／目安1g</span></td><td>施術後の日中ケアを重視する方、ノンケミカル処方を希望する方</td></tr>
         </tbody>
       </table>
-      <p class="credit">※価格は公式小売価格（税込）。製品画像・情報出典：東菱薬品工業株式会社 公式サイト／2026年5月11日付プレスリリース。記事内の使用感は取材時のエステティシャンのコメントをもとに記載します。</p>
+      <p class="credit">※価格は公式小売価格（税込）。製品画像・情報出典：東菱薬品工業株式会社 公式サイト／2026年5月11日付プレスリリース／アンヴェール発表会資料。記事内の使用感は取材時のエステティシャンのコメントをもとに記載します。</p>
     </div>
-    <div class="disclaimer">※成分・試験に関する記載は貴社公式発表の範囲に限定し、効能の断定は行いません。「展示会で完売」の記載は貴社に事実関係をご確認いただいたうえで掲載します。</div>
+    <div class="disclaimer">※発表会資料は記事作成時の参考資料として扱い、表現はそのまま使用せず薬機法・景表法を確認して決定します。成分・試験に関する記載は貴社公式発表の範囲に限定し、効能の断定は行いません。「展示会で完売」の記載は貴社に事実関係をご確認いただいたうえで掲載します。</div>
   </section>
 
   <!-- 05 誘導記事 -->
   <section class="sec" id="sub">
-    <h2 class="s-title"><span class="no">05</span>誘導記事（オプション）：展示会で完売したクレンジング</h2>
+    <h2 class="s-title"><span class="no">05</span>誘導記事（オプション・税別45,000円）：展示会で完売したクレンジング</h2>
     <p class="s-lead">ご評価いただいた「展示会で完売」の切り口を、毛穴・角栓汚れを軸にした記事にします。クレンジングで関心を持った読者を、本文からメイン記事（全5品レビュー）へご案内します。</p>
     <div class="art-head opt"><div class="id">誘導<br>記事</div><div><div class="tag">OPTION｜タイトル案（ご提示案を採用）</div><h3>展示会で完売したサロン専売クレンジングは何が違う？人工角栓を用いた洗浄試験にも注目</h3></div></div>
     <div class="art-body">
@@ -416,16 +430,16 @@
             <li><b>BWJ東京・トレードフェアで完売したクレンジング</b><span>展示会での反響、その場で発注したサロンの声</span></li>
             <li><b>サロンのお客様に多い「毛穴・角栓汚れ」の悩み</b><span>施術の現場で聞かれる悩みと、日々のクレンジングの大切さをサロン目線で解説</span></li>
             <li class="key"><b>人工角栓を用いた洗浄試験とは</b><span>貴社が実施した試験の内容を、公式発表の範囲で分かりやすく紹介</span></li>
-            <li><b>乳化不要・美容成分約80%・マツエク配慮処方</b><span>サロンでの施術前クレンジングとしても、店販としても使いやすい理由</span></li>
-            <li><b>エステティシャンの使用レビュー</b><span>使用感・なじませ方・洗い上がりのコメント</span></li>
+            <li><b>乳化不要・美容成分約80%・マツエク配慮処方</b><span>毛穴ケアなどのサロン施術から、ホームケア提案まで活用しやすい理由（200mLの容量）<span class="newmark">変更</span></span></li>
+            <li><b>エステティシャンの使用レビュー</b><span>厚みのあるオイルジェルが肌を包み込み、こすらずなめらかになじむ使用感と、すすぎ・洗い上がりのコメント</span></li>
             <li class="key"><b>クレンジングの次に：アンヴェールのラインケア</b><span>洗顔・ローション・クリーム・UVセラムを簡単に紹介し、メイン記事（全5品レビュー）へ誘導</span></li>
           </ol>
         </div>
         <div>
-          <div class="meta-box"><div class="mk">訴求ポイントの優先順位</div>
+          <div class="meta-box"><div class="mk">訴求ポイントの優先順位<span class="newmark">変更</span></div>
             <div class="pts">
               <div class="main"><b>人工角栓</b>洗浄試験</div>
-              <div><b>乳化不要</b>なじませるだけ</div>
+              <div><b>乳化不要</b>乳化のひと手間なく、そのまますすげる</div>
               <div><b>約80%</b>美容成分</div>
               <div><b>マツエク</b>配慮処方</div>
             </div>
@@ -501,7 +515,7 @@
       <div class="s hl"><div class="w">STEP 4｜4週目〜</div><b>記事公開</b>同時にMeta広告の配信開始</div>
       <div class="s"><div class="w">STEP 5｜公開2週間後</div><b>レポート</b>PV・問い合わせ数のご報告</div>
     </div>
-    <div class="footnote">本書の検索数・PV・問い合わせ数はすべて試算・参考値であり、成果を保証するものではありません。<br>製品画像・製品情報は東菱薬品工業株式会社 公式サイトおよび2026年5月11日付プレスリリースの公開情報に基づきます。<br>株式会社新東通信｜エステティック通信</div>
+    <div class="footnote">本書の検索数・PV・問い合わせ数はすべて試算・参考値であり、成果を保証するものではありません。<br>製品画像・製品情報は東菱薬品工業株式会社 公式サイト、2026年5月11日付プレスリリース、アンヴェール発表会資料に基づきます。<br>株式会社新東通信｜エステティック通信</div>
   </section>
 
 </div>
